@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gamehaven – Cozy Games, Indie Picks, Retro Play and Your Comfortable Game Corner</title>
+<meta name="description" content="Gamehaven is a calm information site for players: find relaxing and indie games by mood, learn about retro gaming, set up a comfortable game corner and play in a healthy, friendly way.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.YOURDOMAIN.com/">
+<meta property="og:title" content="Gamehaven – Cozy Games, Indie Picks, Retro Play and Your Comfortable Game Corner">
+<meta property="og:description" content="Find games by mood, explore indie and retro gaming and build a comfortable, healthy play space.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.YOURDOMAIN.com/">
+
+<!-- ===== GOOGLE ADSENSE CODE: yahan apna AdSense script paste karein ===== -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+<!-- ======================================================================= -->
+
+<!-- Google Analytics (optional): yahan GA4 code paste karein -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Gamehaven","url":"https://www.YOURDOMAIN.com/","description":"Cozy, indie and retro game guides and healthy play tips."}
+</script>
+
+<style>
+:root{
+  --ink:#16302B; --bg:#EAF1EE; --paper:#FFFFFF; --pine:#14453B; --amber:#F5A524;
+  --rose:#D9576B; --muted:#52695F; --line:#CFDDD7;
+  --head:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'DM Sans',Verdana,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--ink:#E6F1EC; --bg:#0D1F1B; --paper:#14302A; --muted:#A3BDB3; --line:#285044; --pine:#7FD1B6; --rose:#FF8095;}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:1.08rem;line-height:1.75;color:var(--ink);background:var(--bg)}
+a{color:var(--pine)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* header */
+header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:74px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-family:var(--head);font-weight:800;font-size:1.7rem}
+.logo span{color:var(--amber)}
+nav ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap}
+nav a{font-weight:700;font-size:.98rem;text-decoration:none;color:var(--ink)}
+nav a:hover{color:var(--rose)}
+
+/* hero */
+.hero{background:#10372F;color:#fff;padding:90px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:6%;top:50%;width:360px;height:360px;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle,rgba(245,165,36,.55),rgba(245,165,36,0) 68%)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-family:var(--head);font-weight:800;font-size:clamp(2.2rem,5.5vw,4rem);line-height:1.1;max-width:17ch}
+.hero p{max-width:60ch;margin-top:22px;color:#D6E8E1}
+.btn{display:inline-block;margin-top:30px;background:var(--amber);color:#2B1B00;font-weight:700;padding:14px 30px;border-radius:999px;text-decoration:none}
+.btn:hover{background:#FFBC4D}
+.moods{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.moods a{font-size:.95rem;color:#fff;border:1px solid #4D7C6F;padding:6px 16px;border-radius:999px;text-decoration:none}
+.moods a:hover{border-color:var(--amber);color:var(--amber)}
+
+/* layout */
+main{padding:56px 0}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:48px}
+article.section{margin-bottom:56px;scroll-margin-top:90px}
+h2{font-family:var(--head);font-weight:800;font-size:clamp(1.7rem,3vw,2.3rem);line-height:1.2;margin-bottom:16px}
+h2::after{content:"";display:block;width:56px;height:5px;border-radius:5px;background:var(--amber);margin-top:10px}
+article.section:nth-of-type(even) h2::after{background:var(--rose)}
+h3{font-family:var(--head);font-size:1.25rem;margin:24px 0 6px}
+p{margin-bottom:16px}
+ul.list,ol.list{margin:0 0 18px 24px}
+ul.list li,ol.list li{margin-bottom:8px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin:22px 0}
+.tip{border-left:6px solid var(--amber)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:18px 0}
+.cards .box{margin:0}
+.cards h3{margin-top:0}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:.98rem}
+.scroll{overflow-x:auto}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
+th{font-family:var(--head);background:var(--paper)}
+
+/* ads: clearly labelled, never disguised as content */
+.ad{margin:36px 0;text-align:center}
+.ad small{display:block;font-size:.78rem;color:var(--muted);margin-bottom:6px}
+.ad .slot{min-height:120px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);border-radius:10px}
+
+/* sidebar */
+aside .box h3{margin-top:0}
+aside ul{list-style:none}
+aside li{margin-bottom:10px;font-weight:500;font-size:1rem}
+.sticky{position:sticky;top:98px}
+
+/* faq */
+details{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin-bottom:12px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:12px 0 0}
+
+/* disclaimer */
+.disclaimer{background:var(--paper);border:2px solid var(--amber);border-radius:16px;padding:26px 28px;font-size:1rem}
+.disclaimer h2::after{display:none}
+
+/* footer */
+footer{background:#0C2621;color:#BCD3CA;padding:48px 0 28px;font-size:1rem}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+footer h4{font-family:var(--head);color:#fff;font-size:1.15rem;margin-bottom:12px}
+footer a{color:#BCD3CA;text-decoration:none}
+footer a:hover{color:var(--amber)}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+.copy{border-top:1px solid #234A41;margin-top:32px;padding-top:20px;text-align:center;font-size:.9rem}
+
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .sticky{position:static}
+  .fgrid{grid-template-columns:1fr}
+  header{position:static}
+  .hero::before{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="/" aria-label="Gamehaven home">
+      <svg width="48" height="48" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M6 30L32 7l26 23" fill="none" stroke="#F5A524" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="12" y="29" width="40" height="28" rx="6" fill="#14453B"/>
+        <path d="M27 36h4v5h5v4h-5v5h-4v-5h-5v-4h5z" fill="#fff"/>
+        <circle cx="41" cy="39" r="2.6" fill="#F5A524"/><circle cx="46" cy="45" r="2.6" fill="#D9576B"/>
+      </svg>
+      Game<span>haven</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#cozy">Cozy Games</a></li>
+        <li><a href="#mood">Games by Mood</a></li>
+        <li><a href="#indie">Indie &amp; Retro</a></li>
+        <li><a href="#corner">Game Corner</a></li>
+        <li><a href="#community">Friendly Play</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>A calm place to find your next game.</h1>
+    <p>Gamehaven is an independent information site for players who want games that fit their mood. We explain what cozy, indie and retro games are, how to choose by how you feel, how to build a comfortable game corner and how to play in a friendly, healthy way.</p>
+    <a class="btn" href="#cozy">Explore cozy gaming</a>
+    <div class="moods">
+      <a href="#mood">I want to relax</a>
+      <a href="#mood">I want a challenge</a>
+      <a href="#indie">I love old classics</a>
+      <a href="#corner">I need a better setup</a>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="wrap layout">
+
+<div class="content">
+
+  <article class="section" id="cozy">
+    <h2>What is cozy gaming?</h2>
+    <p>Cozy games are designed to feel gentle and welcoming. They usually have low pressure, no harsh penalties, warm art and a steady pace. Players often farm, decorate a home, cook, explore a small town or solve light puzzles. The aim is comfort rather than competition.</p>
+    <h3>Common features</h3>
+    <ul class="list">
+      <li><strong>No fail states:</strong> you can pause, take your time and try again.</li>
+      <li><strong>Small daily goals:</strong> water the crops, meet a neighbour, finish a recipe.</li>
+      <li><strong>Creative expression:</strong> customise a house, a garden or a character.</li>
+      <li><strong>Soft sound and visuals:</strong> calm music and gentle colours.</li>
+    </ul>
+    <p>Popular examples include farming and life simulation titles such as Stardew Valley and Animal Crossing, which many players use as a relaxing way to unwind after school or work. Trying a short demo is a good way to see whether a style suits you.</p>
+    <div class="box tip"><strong>Good to know:</strong> cozy does not mean childish. Many cozy games are made for adults and cover warm, thoughtful themes.</div>
+  </article>
+
+  <article class="section" id="mood">
+    <h2>Choosing games by mood</h2>
+    <p>Genres are useful, but your mood on the day often matters more. Use this table as a starting point.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>If you feel...</th><th>Try this style</th><th>Why it helps</th></tr></thead>
+      <tbody>
+        <tr><td>Tired or stressed</td><td>Farming, decorating, gentle puzzles</td><td>Low pressure and clear small goals</td></tr>
+        <tr><td>Curious</td><td>Exploration and story adventures</td><td>New places and discoveries</td></tr>
+        <tr><td>Social</td><td>Co-op and party games with friends</td><td>Shared laughs and teamwork</td></tr>
+        <tr><td>Focused</td><td>Strategy and logic puzzles</td><td>Deep thinking and planning</td></tr>
+        <tr><td>Energetic</td><td>Platformers, rhythm and racing games</td><td>Fast reactions and rewarding flow</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </article>
+
+  <div class="ad" aria-label="Advertisement">
+    <small>Advertisement</small>
+    <!-- ===== ADSENSE AD UNIT 1: yahan apna ad code paste karein ===== -->
+    <!--
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <div class="slot">Ad space</div>
+  </div>
+
+  <article class="section" id="indie">
+    <h2>Indie and retro gaming explained</h2>
+    <div class="cards">
+      <div class="box">
+        <h3>Indie games</h3>
+        <p>Made by small teams or solo creators, often with a unique idea or art style. They are usually shorter and cheaper than big-budget releases, and many are playable on ordinary computers and phones.</p>
+      </div>
+      <div class="box">
+        <h3>Retro games</h3>
+        <p>Games from earlier decades, such as classic arcade, 8-bit and 16-bit titles. They have simple controls and tight design, and many are re-released on modern platforms.</p>
+      </div>
+    </div>
+    <h3>How to find good indie games</h3>
+    <ol class="list">
+      <li>Browse the curated sections of official stores.</li>
+      <li>Read reviews from several independent critics and players.</li>
+      <li>Watch a short trailer and a gameplay clip, not only screenshots.</li>
+      <li>Check the file size and system requirements before downloading.</li>
+    </ol>
+    <h3>A note about retro and emulation</h3>
+    <p>Always use legally purchased or officially re-released games. Downloading pirated copies harms creators and often exposes your device to malware.</p>
+  </article>
+
+  <article class="section" id="corner">
+    <h2>Build a comfortable game corner</h2>
+    <p>You do not need an expensive room. A few thoughtful choices make long evenings more enjoyable and kinder to your body.</p>
+    <div class="cards">
+      <div class="box"><h3>Seating</h3><p>A supportive chair or a couch with a cushion behind the lower back. Keep feet flat or supported.</p></div>
+      <div class="box"><h3>Screen</h3><p>Place the screen at a comfortable distance, avoid glare from windows and lower the brightness in the evening.</p></div>
+      <div class="box"><h3>Light and sound</h3><p>Soft background lighting reduces eye strain. Use headphones at a moderate volume.</p></div>
+      <div class="box"><h3>Storage</h3><p>Keep controllers, chargers and cables tidy in one box so the space stays calm.</p></div>
+    </div>
+    <h3>Manage your backlog</h3>
+    <p>Many players own more games than they can finish. Make a short list of three games you truly want to play next, set the rest aside, and finish or drop a game without guilt. Enjoyment matters more than completion.</p>
+  </article>
+
+  <div class="ad" aria-label="Advertisement">
+    <small>Advertisement</small>
+    <!-- ===== ADSENSE AD UNIT 2: yahan apna ad code paste karein ===== -->
+    <!--
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <div class="slot">Ad space</div>
+  </div>
+
+  <article class="section" id="community">
+    <h2>Friendly, safe and healthy play</h2>
+    <h3>Be a good community member</h3>
+    <ul class="list">
+      <li>Be respectful in chat and voice, even when a match goes badly.</li>
+      <li>Help newcomers instead of mocking mistakes.</li>
+      <li>Use the report and block tools for harassment.</li>
+      <li>Never share your address, school, passwords or other personal details with strangers.</li>
+    </ul>
+    <h3>Protect yourself and your account</h3>
+    <ul class="list">
+      <li>Use a unique password and two-step verification.</li>
+      <li>Buy games only from official stores.</li>
+      <li>Ignore messages offering free items in return for your login.</li>
+      <li>Set spending limits and be careful with in-game purchases.</li>
+    </ul>
+    <h3>Healthy habits</h3>
+    <p>Take a short break every hour, drink water, sit comfortably and avoid playing right before bed. If gaming begins to affect your sleep, studies, work or relationships, or you feel you cannot stop, speak to a trusted person or a qualified professional.</p>
+    <p>Gamehaven does not cover or promote gambling, betting or real-money casino games.</p>
+  </article>
+
+  <article class="section" id="faq">
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>Do I need a powerful computer for cozy and indie games?</summary>
+      <p>Usually not. Many are designed to run on modest hardware, including older laptops and phones. Always check the system requirements on the store page.</p>
+    </details>
+    <details>
+      <summary>Are cozy games good for children?</summary>
+      <p>Many are, but each game has its own age rating. Check PEGI, ESRB or your local rating and play together first if you are a parent.</p>
+    </details>
+    <details>
+      <summary>Is it normal to prefer relaxing games?</summary>
+      <p>Yes. People enjoy games for many reasons, and choosing calm, low-pressure games is a perfectly valid way to play.</p>
+    </details>
+    <details>
+      <summary>Does Gamehaven sell or host games?</summary>
+      <p>No. Gamehaven is an informational website only. We do not host, sell or distribute games.</p>
+    </details>
+  </article>
+
+  <article class="section" id="about">
+    <h2>About Gamehaven</h2>
+    <p>Gamehaven was created as a welcoming corner of the internet for players who prefer thoughtful, friendly gaming. We write original articles, avoid hype and clickbait, and update our pages whenever we find mistakes.</p>
+    <p>Questions, corrections or suggestions are welcome. Email us at <a href="mailto:contact@YOURDOMAIN.com">contact@YOURDOMAIN.com</a>.</p>
+  </article>
+
+  <section class="disclaimer" id="disclaimer" aria-labelledby="disc-title">
+    <h2 id="disc-title">Disclaimer</h2>
+    <p>The content on Gamehaven is provided for general information and entertainment purposes only. It is not medical, psychological, legal or professional advice. If you have concerns about your health, wellbeing or safety, speak with a qualified professional.</p>
+    <p>Game availability, prices, ratings and features change often. We try to keep information accurate but cannot guarantee that it is complete or current. You use the information at your own risk, and Gamehaven is not liable for any loss or damage arising from its use.</p>
+    <p>Gamehaven is not affiliated with, sponsored by or endorsed by any game developer, publisher or platform. All game names and trademarks mentioned belong to their respective owners and are used only for identification and commentary. External links and advertisements, including those served by third-party networks such as Google AdSense, are shown for convenience and are clearly labelled. We do not control their content.</p>
+  </section>
+
+</div>
+
+<aside>
+  <div class="sticky">
+    <div class="box">
+      <h3>On this page</h3>
+      <ul>
+        <li><a href="#cozy">Cozy gaming</a></li>
+        <li><a href="#mood">Games by mood</a></li>
+        <li><a href="#indie">Indie and retro</a></li>
+        <li><a href="#corner">Game corner</a></li>
+        <li><a href="#community">Friendly, safe play</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="ad">
+      <small>Advertisement</small>
+      <!-- ===== ADSENSE AD UNIT 3 (sidebar): yahan apna ad code paste karein ===== -->
+      <div class="slot" style="min-height:250px">Ad space</div>
+    </div>
+  </div>
+</aside>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Gamehaven</h4>
+        <p>Independent information about cozy, indie and retro games and healthy, friendly play. Educational content only.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#cozy">Cozy gaming</a></li>
+          <li><a href="#mood">Games by mood</a></li>
+          <li><a href="#indie">Indie and retro</a></li>
+          <li><a href="#corner">Game corner</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <!-- Apne pages ke sahi link yahan lagayein -->
+          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms and Conditions</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+          <li><a href="#about">About / Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="yr">2026</span> Gamehaven. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
